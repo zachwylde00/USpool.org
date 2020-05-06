@@ -28,15 +28,17 @@ jobs:
       run: echo Hello, world!
     steps:
     # Runs a set of commands using the runners shell       
+    - uses: actions/checkout@v2 
     - name: Create USpool national database
     - run: Start MariaDB
         wget:"https://ong/mariadb-action@v1.1"
 
     - name: Run a multi-line script
+    - uses: Deploy keys
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
       run:
-        test deploy: "https://uspool/stratumtcp:3333/us_ashburn-1@oraclecloud.com/uspool_org-automated_action-import_account-uspool/usbitcoinbankandandexchangellc@oraclecloud/userid.ebank/password.auto-updatedsytemgen.random./"
+        test deploy: "https://zachwylde00/uspool.stratumtcp-3333.us_ashburn-1@oraclecloud.com/uspool_org-automated_action-import_account-uspool/usbitcoinbankandandexchangellc@oraclecloud/userid.ebank/password.auto-updatedsytemgen.random./"
       run:
         test deploy: "http://johnjpruettii.org"
