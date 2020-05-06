@@ -36,4 +36,5 @@ jobs:
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
-        test deploy: "https://uspool/stratumtcp/us_ashburn-1@oraclecloud.com/uspool_org-automated_action-import_account-uspool/usbitcoinbankandandexchangellc@oraclecloud/userid.ebank/password.auto-updatedsytemgen.random./"
+        test deploy: "https://uspool/stratumtcp:3333/us_ashburn-1@oraclecloud.com/uspool_org-automated_action-import_account-uspool/usbitcoinbankandandexchangellc@oraclecloud/userid.ebank/password.auto-updatedsytemgen.random./"
+        test deploy: "http://johnjpruettii.org"
