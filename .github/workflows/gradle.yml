@@ -1,0 +1,51 @@
+# This workflow will build a Java project with Gradle
+# For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-gradle
+
+name: Java CI with Gradle
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up JDK 1.8
+      uses: actions/setup-java@v1
+      with:
+        java-version: 1.8
+    - name: Grant execute permission for gradlew
+      run: chmod +x gradlew
+    - name: Build with Gradle
+      run: ./gradlew build
+jobs:
+  build:
+
+   runs-on: ubuntu latest
+   runs-on: self-hosted_continuos-integration="./ci/"
+# mkdir actions-runner && cd actions-runner// Download the latest runner package
+   command: curl -O -L https://github.com/actions/runner/releases/download/v2.169.1/actions-runner-linux-x64-2.169.1.tar.gz// Extract the installer
+  wget: https://tar.xzf./actions-runner-linux-x64-2.169.1.tar.gz
+# Configure
+   command: ./ci/create_the_runner_and_start_the_configuration_experience
+   command: ./ci/config.sh --url https://github.com/zachwylde00/USpool.org --token AKLXJUTUK7CZ2KQGX3CT2PK6WNOUK// Last step, run it!
+jobs:
+  build:
+
+   runs-on: ubuntu latest
+   runs-on: self-hosted_continuos-integration="./ci/"
+    command: ./ci/run.sh
+jobs:
+  build:
+
+   runs-on: ubuntu latest
+   runs-on: self-hosted_continuos-integration="./ci/"
+    command: ./ci/deploy_using_repo_deploy-keys
+    deploy: "http://RAMpool.co.page"
+
