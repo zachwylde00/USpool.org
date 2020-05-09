@@ -37,7 +37,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Build and test deploy project;then deploy project, if, successful test
     - run: echo Add other actions to build,
-       echo test, and deploy your project.
+    - run: echo test, and deploy your project.
      steps:
     # Runs repo and page building actions by Adding other actions - uses:repo deploy key
     - uses: actions/checkout@v2+repo_deploy-key
