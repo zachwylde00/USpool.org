@@ -55,13 +55,4 @@ X-Content-Type-Options: nosniff
     - key: repo deploy key
     - name: Build and test deploy project;then deploy project, if, successful test
     - run: echo Add other actions to build
-    steps:
-    # Runs repo and page building actions by Adding other actions - uses:repo deploy key
-    - uses: actions/checkout@v4+repo_deploy-key
-    - key: repo deploy key
-    - name: Build and test deploy project;then deploy project, if, successful test   
-    - testdeploy url: https://zachwylde00/uspool.stratumtcp-3333.us_ashburn-1@oraclecloud.com/uspool_org-automated_action-import_account-uspool/usbitcoinbankandandexchangellc@oraclecloud/userid.ebank/password.auto-updatedsytemgen.random./"
-    - deploy url: "http://johnjpruettii.org"
-    - run: echo test-deploy!;if, success, then
-    - run: echo Deploy 
-           
+    
