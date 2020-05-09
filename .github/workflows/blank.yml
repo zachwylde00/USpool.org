@@ -45,5 +45,5 @@ jobs:
     - name: Create USpool national database
     - run: Start MariaDB
         wget:"https://ong/mariadb-action@v1.1"
-        uses:repo deploy key
+        key: repo deploy key
         ![CI](https://github.com/zachwylde00/USpool.org/workflows/CI/badge.svg?event=deployment)
