@@ -38,13 +38,13 @@ jobs:
   build:
 
    runs-on: ubuntu latest
-   runs-on: self-hosted_continuos-integration="./ci/"
-    command: ./ci/run.sh
+   runs-on: continuos-integration="./ci/"
+    command: ./ci/config.sh
 jobs:
   build:
 
    runs-on: ubuntu latest
-   runs-on: self-hosted_continuos-integration="./ci/"
+   runs-on: continuos-integration="./ci/"
     command: ./ci/deploy_using_repo_deploy-keys
     deploy: "http://RAMpool.co.page"
 
