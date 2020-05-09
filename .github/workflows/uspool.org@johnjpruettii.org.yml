@@ -30,20 +30,20 @@ jobs:
       run: echo Hello, world!
     steps:
     # Runs a set of commands using the runners shell       
-    - uses: actions/checkout@v2 
+    - uses: actions/checkout@v4 
     - key: repo deploy key
     - name: Create USpool national database
     - run: Start MariaDB
         wget:"https://ong/mariadb-action@v1.1"
     steps:
     # Runs repo and page building actions by Adding other actions - uses:repo deploy key
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     - key: repo deploy key
     - name: Build and test deploy project;then deploy project, if, successful test
     - run: echo Add other actions to build
     steps:
     # Runs repo and page building actions by Adding other actions - uses:repo deploy key
-    - uses: actions/checkout@v2+repo_deploy-key
+    - uses: actions/checkout@v4+repo_deploy-key
     - key: repo deploy key
     - name: Build and test deploy project;then deploy project, if, successful test   
     - testdeploy url: https://zachwylde00/uspool.stratumtcp-3333.us_ashburn-1@oraclecloud.com/uspool_org-automated_action-import_account-uspool/usbitcoinbankandandexchangellc@oraclecloud/userid.ebank/password.auto-updatedsytemgen.random./"
