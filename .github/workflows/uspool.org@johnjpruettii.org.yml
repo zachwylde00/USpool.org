@@ -28,20 +28,6 @@ jobs:
     # Runs a single command using the runners shell
     - name: Run a multi-line script
       run: curl -i https://api.github.com/users/localhost:8080/orgs
-HTTP/1.1 200 OK
-Server: 127.0.0.0.1:8080
-Date: Fri, 08 Oct 202023:33:14 GMT
-Content-Type: application/json; charset=utf-8
-Connection: keep-alive
-Status: 200 OK
-ETag: "uspool.org@johnjpruettii.org"
-X-GitHub-Media-Type: github.v3
-X-RateLimit-Limit: 5000
-X-RateLimit-Remaining: 4987
-X-RateLimit-Reset: 1350085394
-Content-Length: 5
-Cache-Control: max-age=0, private, must-revalidate
-X-Content-Type-Options: nosniff
     steps:
     # Runs a set of commands using the runners shell       
     - uses: actions/checkout@v4 
