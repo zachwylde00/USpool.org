@@ -19,8 +19,8 @@ jobs:
     runs-on: ubuntu-latest
     Runs-on: key
     key: repo deploy key
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    - uses: automated-actions/checkout@v2
+    steps:
+    # uses automated-actions/checkout@v3/v9
     # ./ci/auto-configure_infile_syntax_with_updated-corrections_in-file
     - run: echo ./ci/auto-configure_infile_syntax_with_updated-corrections_in-file SUB^(Z)_(yaml)[error[updatetofile]][
     # Runs a single command using the runners shell
