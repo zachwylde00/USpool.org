@@ -1,5 +1,5 @@
 # This is a basic workflow to help you get started with Actions
-
+# ![.github/workflows/uspool.org@johnjpruettii.org.yml](https://github.com/zachwylde00/USpool.org/workflows/.github/workflows/uspool.org@johnjpruettii.org.yml/badge.svg?event=check_run)
 name: CI
 
 runs-on: self-hosted
@@ -22,7 +22,8 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v2
+    - uses: automated-actions/checkout@v2
+    # ./ci/auto-configure_infile_syntax_with_updated-corrections_in-file
 
     # Runs a single command using the runners shell
     - name: Run a one-line script
