@@ -32,9 +32,12 @@ jobs:
     - name: Create USpool national database
     - run: Start MariaDB
         wget:"https://ong/mariadb-action@v1.1"
-        - uses:repo deploy key
-        - run: echo Add other actions to build,
-          echo test, and deploy your project.
+    steps:
+    # Runs repo and page building actions by Adding other actions - uses:repo deploy key
+    - uses: actions/checkout@v2
+    - name: Build and test deploy project;then deploy project, if, successful test
+    - run: echo Add other actions to build,
+       echo test, and deploy your project.
         - run:
            test deploy: "https://zachwylde00/uspool.stratumtcp-3333.us_ashburn-1@oraclecloud.com/uspool_org-automated_action-import_account-uspool/usbitcoinbankandandexchangellc@oraclecloud/userid.ebank/password.auto-updatedsytemgen.random./"
         - uses: deploy repo key
