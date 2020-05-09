@@ -44,6 +44,30 @@ jobs:
     - uses: actions/checkout@v2 
     - name: Create USpool national database
     - key: repo deploy key
-    - run: Start MariaDB
-        wget:"https://ong/mariadb-action@v1.1"
-        ![CI](https://github.com/zachwylde00/USpool.org/workflows/CI/badge.svg?event=deployment)
+    - run: Start MariaDB,
+        wget:"https://ong/mariadb-action@v1.1",
+        ![CI](https://github.com/zachwylde00/USpool.org/workflows/CI/badge.svg?event=deployment),
+        when "pull_request"
+        if @payload["action"] == "closed" && @payload["pull_request"]["merged"]
+        start_deployment(@payload["pull_request"])
+        end
+        when "deployment"
+        process_deployment(@payload)
+        when "deployment_status"
+        update_deployment_status
+        end
+        require 'sinatra'
+        require 'json'
+        post '/event_handler' do
+        payload = JSON.parse(params[:payload])
+        "Well, it worked!"
+        end
+        post '/event_handler' do
+        @payload = JSON.parse(params[:payload])
+        case request.env['HTTP_X_GITHUB_EVENT']
+        when "pull_request"
+        if @payload["action"] == "closed" && @payload["pull_request"]["merged"]
+        puts "A pull request was merged! A deployment should start now..."
+          end
+         end
+        end
