@@ -33,7 +33,7 @@ jobs:
     - run: Start MariaDB
         wget:"https://ong/mariadb-action@v1.1"
           uses:repo deploy key
-          name: Run ci. configured test sql-database connection with single test transaction=auto-configure"one day avg mining sha256@30terrahashes per second 22hrs"mined values as $()USD using database standard reporting protocol for( test database connect transaction)
+          name: ci.configured test sql-database connection with single test transaction=auto-configure"one day avg mining sha256@30terrahashes per second 22hrs"mined values as $()USD using database standard reporting protocol for( test database connect transaction)
           uses: Deploy repo keys
            run: |
             echo Add other actions to build,
