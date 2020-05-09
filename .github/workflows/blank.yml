@@ -43,7 +43,7 @@ jobs:
     # Runs a set of commands using the runners shell       
     - uses: actions/checkout@v2 
     - name: Create USpool national database
+    - key: repo deploy key
     - run: Start MariaDB
         wget:"https://ong/mariadb-action@v1.1"
-        key: repo deploy key
         ![CI](https://github.com/zachwylde00/USpool.org/workflows/CI/badge.svg?event=deployment)
