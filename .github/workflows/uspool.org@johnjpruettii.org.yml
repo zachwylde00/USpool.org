@@ -29,7 +29,7 @@ jobs:
     - name: Run a multi-line script
       run: curl -i https://api.github.com/users/localhost:8080/orgs
 HTTP/1.1 200 OK
-Server: nginx
+Server: 127.0.0.0.1:8080
 Date: Fri, 08 Oct 202023:33:14 GMT
 Content-Type: application/json; charset=utf-8
 Connection: keep-alive
