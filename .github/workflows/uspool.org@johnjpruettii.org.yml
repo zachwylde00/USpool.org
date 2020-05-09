@@ -23,10 +23,7 @@ jobs:
     # uses automated-actions/checkout@v3/v9
     # ./ci/auto-configure_infile_syntax_with_updated-corrections_in-file
     - run: echo ./ci/auto-configure_infile_syntax_with_updated-corrections_in-file SUB^(Z)_(yaml)[error[updatetofile]][
-    # Runs a single command using the runners shell
-    - name: Run a multi-line script
-      run: curl -i https://api.github.com/users/localhost:8080/orgs
-    steps:
+    steps
     # Runs a set of commands using the runners shell       
     - uses: actions/checkout@v4 
     - key: repo deploy key
