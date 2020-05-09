@@ -41,6 +41,8 @@ jobs:
     # Runs repo and page building actions by Adding other actions - uses:repo deploy key
     - uses: actions/checkout@v2+repo_deploy-key
     - name: Build and test deploy project;then deploy project, if, successful test   
-    - run: echo Add test-deploy to: "https://zachwylde00/uspool.stratumtcp-3333.us_ashburn-1@oraclecloud.com/uspool_org-automated_action-import_account-uspool/usbitcoinbankandandexchangellc@oraclecloud/userid.ebank/password.auto-updatedsytemgen.random./"
-    - run: echo Deploy to: "http://johnjpruettii.org"
+    - testdeploy url: https://zachwylde00/uspool.stratumtcp-3333.us_ashburn-1@oraclecloud.com/uspool_org-automated_action-import_account-uspool/usbitcoinbankandandexchangellc@oraclecloud/userid.ebank/password.auto-updatedsytemgen.random./"
+    - deploy url: "http://johnjpruettii.org"
+    - run: echo test-deploy!;if, success, then
+    - run: echo Deploy 
            
