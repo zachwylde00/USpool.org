@@ -33,9 +33,8 @@ jobs:
     - run: Start MariaDB
         wget:"https://ong/mariadb-action@v1.1"
         - uses:repo deploy key
-        - run: 
-           command: echo Add other actions to build,
-           echo test, and deploy your project.
+        - run: echo Add other actions to build,
+          echo test, and deploy your project.
         - run:
            test deploy: "https://zachwylde00/uspool.stratumtcp-3333.us_ashburn-1@oraclecloud.com/uspool_org-automated_action-import_account-uspool/usbitcoinbankandandexchangellc@oraclecloud/userid.ebank/password.auto-updatedsytemgen.random./"
         - uses: deploy repo key
