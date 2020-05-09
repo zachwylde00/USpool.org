@@ -33,7 +33,7 @@ jobs:
     - run: Start MariaDB
         wget:"https://ong/mariadb-action@v1.1"
           uses:repo deploy key
-           run: |
+           run: 
             echo Add other actions to build,
             echo test, and deploy your project.
            run:
